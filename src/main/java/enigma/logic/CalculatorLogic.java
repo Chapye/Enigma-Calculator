@@ -6,5 +6,10 @@ public class CalculatorLogic {
 
         return x + y;
     }
+
+    public double subtractionOperator(double x, double y) {
+        return x - y;
+    }
+
     
 }
