@@ -22,4 +22,8 @@ public class CalculatorLogic {
     public double nthPowerOperator(double x, double n) {
         return Math.pow(x, n);
     }
+
+    public double percentageOperator(double x, double percent) {
+        return ( x / 100 ) * percent;
+    }
 }
