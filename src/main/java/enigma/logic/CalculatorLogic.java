@@ -15,5 +15,9 @@ public class CalculatorLogic {
         return x * y;
     }
 
+    public double divisionOperator(double x, double y) {
+        return x / y;
+    }
+
     
 }
