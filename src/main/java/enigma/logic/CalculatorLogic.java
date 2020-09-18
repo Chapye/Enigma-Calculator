@@ -11,5 +11,9 @@ public class CalculatorLogic {
         return x - y;
     }
 
+    public double multiplicationOperator(double x, double y) {
+        return x * y;
+    }
+
     
 }
