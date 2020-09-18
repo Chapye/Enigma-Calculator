@@ -19,5 +19,7 @@ public class CalculatorLogic {
         return x / y;
     }
 
-    
+    public double nthPowerOperator(double x, double n) {
+        return Math.pow(x, n);
+    }
 }
