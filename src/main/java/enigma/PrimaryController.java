@@ -3,6 +3,7 @@ package enigma;
 import java.io.IOException;
 
 import enigma.logic.CalculatorLogic;
+import javafx.application.Platform;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -15,6 +16,13 @@ public class PrimaryController {
     public TextField MiniDisplay;
     public Button EqualsButton;
     CalculatorLogic logic = new CalculatorLogic();
+
+    @FXML
+    public void initialize() {
+
+        // unfocus pathField
+        Platform.runLater(() -> EqualsButton.requestFocus());
+    }
 
     @FXML
     private void switchToSecondary() throws IOException {
