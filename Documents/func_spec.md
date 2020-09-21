@@ -1,4 +1,4 @@
-#Funkcionális Specifikáció
+# Funkcionális Specifikáció
 
 ## A rendszer céljai
 
