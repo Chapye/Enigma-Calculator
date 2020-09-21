@@ -1,11 +1,18 @@
 package enigma;
 
 import java.io.IOException;
+
+import enigma.logic.CalculatorLogic;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 public class PrimaryController {
-
+    @FXML
+    public TextField MainDisplay;
+    public TextField MiniDisplay;
+    public Button EqualsButton;
+    CalculatorLogic logic = new CalculatorLogic();
     @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
@@ -41,10 +48,16 @@ public class PrimaryController {
     public void processDecimal() {}
 
     @FXML
-    public void processClear() {}
+    public void processClear() {setDisplay(MainDisplay,0);}
 
     @FXML
-    public void processAllClear() {}
+    public void processAllClear() {
+        logic.setStoredValue(0.0);
+        logic.setStoredOperator(CalculatorLogic.CalculatorOperator.NONE);
+        setDisplay(MainDisplay,0);
+        setDisplay(MiniDisplay,"");
+        MainDisplay.setStyle("-fx-font: 36 System");
+    }
 
     @FXML
     public void processBackspace() {}
