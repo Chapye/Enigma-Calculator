@@ -3,6 +3,7 @@ package enigma;
 import java.io.IOException;
 
 import enigma.logic.CalculatorLogic;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -18,7 +19,19 @@ public class PrimaryController {
         App.setRoot("secondary");
     }
     @FXML
-    public void processDigit(){}
+    public void processDigit(Event buttonevent) {
+        if (MainDisplay.getText().equals("NaN") || MainDisplay.getText().equals("Infinity")
+                || MainDisplay.getText().equals("0") ) {
+            MainDisplay.setText("");
+            Object node = buttonevent.getSource();
+            Button b = (Button) node;
+            MainDisplay.setText(b.getText());
+
+        } else {
+            Object node = buttonevent.getSource();
+            Button b = (Button) node;
+            MainDisplay.setText(MainDisplay.getText() + b.getText());
+        }}
 
     @FXML
     public void processEqual(){}
