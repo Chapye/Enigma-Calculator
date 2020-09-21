@@ -2,6 +2,7 @@ package enigma;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
 
 public class PrimaryController {
 
@@ -48,5 +49,22 @@ public class PrimaryController {
     @FXML
     public void processBackspace() {}
 
-    
+    private void setDisplay(TextField mainDisplay, double storedValue, String s){
+        if((int)storedValue==storedValue)
+            mainDisplay.setText(String.valueOf((int)storedValue)+" "+s);
+        else
+            mainDisplay.setText(String.valueOf(storedValue)+" "+s);
+    }
+
+
+    private void setDisplay(TextField display,String message){
+        display.setText(message);
+    }
+
+    private  void setDisplay(TextField mainDisplay, double storedValue){
+        if((int)storedValue==storedValue)
+            mainDisplay.setText(String.valueOf((int)storedValue));
+        else
+            mainDisplay.setText(String.valueOf(storedValue));
+    }
 }
