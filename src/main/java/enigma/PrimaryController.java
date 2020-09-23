@@ -303,6 +303,11 @@ public class PrimaryController {
 
     @FXML
     public void processBackspace() {
+        String text = MainDisplay.getText();
+        char[] numbers = new char[255];
+        for (int i = 0; i < text.length() - 1; i++)
+            numbers[i] += text.charAt(i);
+        setDisplay(MainDisplay,String.valueOf(numbers));
     }
 
     private void setDisplay(TextField mainDisplay, double storedValue, String s) {
