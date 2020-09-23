@@ -224,7 +224,26 @@ public class PrimaryController {
 
     @FXML
     public void processExponentiation() {
+        resizeMainDisplay();
+        try {
+            if (logic.getStoredOperator().equals(CalculatorLogic.CalculatorOperator.NONE)) {
+                logic.setStoredValue(Double.parseDouble(MainDisplay.getText()));
+                logic.setStoredOperator(CalculatorLogic.CalculatorOperator.POWER);
+                setDisplay(MiniDisplay,logic.getStoredValue(),whichOperator());
+                setDisplay(MainDisplay,0);
+                setDecimal(false);
+            } else {
+                logic.setStoredValue(whichOperatorMethodHaveToCall());
+                logic.setStoredOperator(CalculatorLogic.CalculatorOperator.POWER);
+                setDisplay(MiniDisplay,logic.getStoredValue(),whichOperator());
+                setDisplay(MainDisplay,0);
+                setDecimal(false);
 
+            }
+        } catch (NumberFormatException e) {
+            logic.setStoredOperator(CalculatorLogic.CalculatorOperator.POWER);
+            setDisplay(MiniDisplay,logic.getStoredValue(),whichOperator());
+        }
     }
 
     @FXML
