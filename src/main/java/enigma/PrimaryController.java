@@ -195,10 +195,36 @@ public class PrimaryController {
 
     @FXML
     public void processDivision() {
+        resizeMainDisplay();
+        try {
+            if (logic.getStoredOperator().equals(CalculatorLogic.CalculatorOperator.NONE)) {
+                logic.setStoredValue(Double.parseDouble(MainDisplay.getText()));
+                logic.setStoredOperator(CalculatorLogic.CalculatorOperator.DIVISION);
+                setDisplay(MiniDisplay,logic.getStoredValue(),whichOperator());
+                setDecimal(false);
+                setDisplay(MainDisplay,0);
+            } else {
+                logic.setStoredValue(whichOperatorMethodHaveToCall());
+                logic.setStoredOperator(CalculatorLogic.CalculatorOperator.DIVISION);
+                setDisplay(MiniDisplay,logic.getStoredValue(),whichOperator());
+                setDisplay(MainDisplay,0);
+                setDecimal(false);
+
+            }
+        } catch (NumberFormatException e) {
+            logic.setStoredOperator(CalculatorLogic.CalculatorOperator.DIVISION);
+            setDisplay(MiniDisplay,logic.getStoredValue(),whichOperator());
+        }
+
+    }
+
+    private void resizeMainDisplay() {
+        MainDisplay.setStyle("-fx-font: 24 System");
     }
 
     @FXML
     public void processExponentiation() {
+
     }
 
     @FXML
