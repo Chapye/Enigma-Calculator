@@ -63,6 +63,7 @@ public class PrimaryController {
 
     @FXML
     public void processAddition() {
+        
     }
 
     @FXML
@@ -128,4 +129,24 @@ public class PrimaryController {
         else
             mainDisplay.setText(String.valueOf(storedValue));
     }
+
+    String whichOperator(){
+        switch(logic.getStoredOperator()) {
+            case ADDITION:
+                return "+";
+            case SUBTRACTION:
+                return "-";
+            case MULTIPLICATION:
+                return "*";
+            case DIVISION:
+                return "/";
+            case POWER:
+                return "^";
+            case PERCENTAGE:
+                return "%";
+        }
+
+        return null;
+    }
+
 }
