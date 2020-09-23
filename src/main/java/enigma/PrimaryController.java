@@ -63,7 +63,25 @@ public class PrimaryController {
 
     @FXML
     public void processAddition() {
-        
+        try {
+            if(logic.getStoredOperator().equals(CalculatorLogic.CalculatorOperator.NONE)){
+                logic.setStoredValue(Double.parseDouble(MainDisplay.getText()));
+                logic.setStoredOperator(CalculatorLogic.CalculatorOperator.ADDITION);
+                MainDisplay.setText("");
+                MiniDisplay.setText(String.valueOf(logic.getStoredValue())+" "+ whichOperator());}
+            else
+            {
+                logic.setStoredValue(whichOperatorMethodHaveToCall());
+                logic.setStoredOperator(CalculatorLogic.CalculatorOperator.ADDITION);
+                MiniDisplay.setText(String.valueOf(logic.getStoredValue())+" "+whichOperator());
+                MainDisplay.setText("");
+     
+     
+            }
+        }catch (NumberFormatException e){
+            logic.setStoredOperator(CalculatorLogic.CalculatorOperator.ADDITION);
+            MiniDisplay.setText(String.valueOf(logic.getStoredValue())+" "+whichOperator());
+        }
     }
 
     @FXML
