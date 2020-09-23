@@ -16,6 +16,24 @@ public class PrimaryController {
     public TextField MiniDisplay;
     public Button EqualsButton;
     CalculatorLogic logic = new CalculatorLogic();
+    Boolean decimal = false;
+    Boolean pressed_equal = false;
+
+    public Boolean getDecimal() {
+        return decimal;
+    }
+
+    public void setDecimal(Boolean decimal) {
+        this.decimal = decimal;
+    }
+
+    public Boolean getPressed_equal() {
+        return pressed_equal;
+    }
+
+    public void setPressed_equal(Boolean pressed_equal) {
+        this.pressed_equal = pressed_equal;
+    }
 
     @FXML
     public void initialize() {
@@ -59,6 +77,52 @@ public class PrimaryController {
 
     @FXML
     public void processEqual() {
+        try {
+            switch (logic.getStoredOperator()) {
+                case ADDITION:
+                    logic.setStoredValue( logic.additionOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText())));
+                    setDisplay(MainDisplay,logic.getStoredValue());
+                    default_place();
+                    break;
+                case SUBTRACTION:
+                    logic.setStoredValue( logic.subtractionOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText())));
+                    setDisplay(MainDisplay,logic.getStoredValue());
+                    default_place();
+                    break;
+                case MULTIPLICATION:
+                    logic.setStoredValue( logic.multiplicationOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText())));
+                    setDisplay(MainDisplay,logic.getStoredValue());
+                    default_place();
+                    break;
+                case DIVISION:
+                    logic.setStoredValue( logic.divisionOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText())));
+                    setDisplay(MainDisplay,logic.getStoredValue());
+                    default_place();
+                    break;
+                case POWER:
+                    logic.setStoredValue( logic.nthPowerOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText())));
+                    setDisplay(MainDisplay,logic.getStoredValue());
+                    default_place();
+                    break;
+                case PERCENTAGE:
+                    logic.setStoredValue( logic.percentageOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText())));
+                    setDisplay(MainDisplay,logic.getStoredValue());
+                    default_place();
+                    break;
+            }
+            MainDisplay.setStyle("-fx-font: 36 System");
+
+        } catch (NullPointerException e) {
+            System.out.println("nincs operator");
+
+        }
+    }
+
+    private void default_place() {
+        logic.setStoredOperator(CalculatorLogic.CalculatorOperator.NONE);
+        MiniDisplay.setText("");
+        setDecimal(false);
+        setPressed_equal(true);
     }
 
     @FXML
