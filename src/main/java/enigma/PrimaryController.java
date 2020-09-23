@@ -272,10 +272,19 @@ public class PrimaryController {
 
     @FXML
     public void processNegate() {
+        double numbers = Double.parseDouble(MainDisplay.getText());
+        numbers *= -1;
+        setDisplay(MainDisplay,numbers);
     }
 
     @FXML
     public void processDecimal() {
+        if (getDecimal() == false) {
+            String numbers = MainDisplay.getText();
+            numbers += ".";
+            setDisplay(MainDisplay,numbers);
+            setDecimal(true);
+        }
     }
 
     @FXML
