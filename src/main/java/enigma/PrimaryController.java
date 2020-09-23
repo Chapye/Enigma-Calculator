@@ -109,6 +109,24 @@ public class PrimaryController {
 
     @FXML
     public void processMultiplication() {
+        try {if(logic.getStoredOperator().equals(CalculatorLogic.CalculatorOperator.NONE)){
+            logic.setStoredValue(Double.parseDouble(MainDisplay.getText()));
+            logic.setStoredOperator(CalculatorLogic.CalculatorOperator.MULTIPLICATION);
+            MainDisplay.setText("");
+            MiniDisplay.setText(String.valueOf(logic.getStoredValue())+" "+ whichOperator());}
+        else
+        {
+            logic.setStoredValue(whichOperatorMethodHaveToCall());
+            logic.setStoredOperator(CalculatorLogic.CalculatorOperator.MULTIPLICATION);
+            MiniDisplay.setText(String.valueOf(logic.getStoredValue())+" "+whichOperator());
+            MainDisplay.setText("");
+
+        }
+
+        }catch (NumberFormatException e){
+            logic.setStoredOperator(CalculatorLogic.CalculatorOperator.MULTIPLICATION);
+            MiniDisplay.setText(String.valueOf(logic.getStoredValue())+" "+whichOperator());
+        }
     }
 
     @FXML
