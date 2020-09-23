@@ -149,4 +149,22 @@ public class PrimaryController {
         return null;
     }
 
+    double whichOperatorMethodHaveToCall(){
+        switch(logic.getStoredOperator()) {
+            case ADDITION:
+                return logic.additionOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText()));
+            case SUBTRACTION:
+                return logic.subtractionOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText()));
+            case MULTIPLICATION:
+                return logic.multiplicationOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText()));
+            case DIVISION:
+                return logic.divisionOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText()));
+            case POWER:
+                return logic.nthPowerOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText()));
+            case PERCENTAGE:
+                return logic.percentageOperator(logic.getStoredValue(), Double.parseDouble(MainDisplay.getText()));
+        }
+        return 0;
+    }
+
 }
