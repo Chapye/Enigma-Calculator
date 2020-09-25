@@ -24,6 +24,7 @@ public class EnigmaCalculatorMain extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"), 350, 480);
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.getIcons().add(new Image(EnigmaCalculatorMain.class.getResourceAsStream("enigma.png")));
         stage.show();
