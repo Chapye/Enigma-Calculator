@@ -14,7 +14,7 @@
             <TextField fx:id="MiniDisplay" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="25.0" prefWidth="245.0" />
             
             <Button layoutX="20.0" layoutY="410.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" text="0" />
-            <Button layoutX="285.0" layoutY="340.0" mnemonicParsing="false" onAction="#processEqual"  prefHeight="115.0" prefWidth="45.0" text="=" />
+            <Button fx:id="EqualsButton" layoutX="285.0" layoutY="340.0" mnemonicParsing="false" onAction="#processEqual"  prefHeight="115.0" prefWidth="45.0" text="=" />
             <Button layoutX="218.75" layoutY="410.0" mnemonicParsing="false" onAction="#processAddition" prefHeight="45.0" prefWidth="45.0" text="+" />
             <Button layoutX="152.5" layoutY="410.0" mnemonicParsing="false" onAction="#processNegate" prefHeight="45.0" prefWidth="45.0" text="+-" />
             <Button layoutX="86.25" layoutY="410.0" mnemonicParsing="false" onAction="#processDecimal" prefHeight="45.0" prefWidth="45.0" text="." />
