@@ -13,28 +13,28 @@
             <TextField fx:id="MainDisplay" alignment="BOTTOM_RIGHT" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="70.0" prefWidth="310.0" style="-fx-background-color: #ffff80;" />
             <TextField fx:id="MiniDisplay" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="25.0" prefWidth="245.0" style="-fx-background-color: #ffff4d;" />
             
-            <Button layoutX="20.0" layoutY="410.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="0" />
-            <Button fx:id="EqualsButton" layoutX="285.0" layoutY="340.0" mnemonicParsing="false" onAction="#processEqual" prefHeight="115.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="=" />
-            <Button layoutX="218.75" layoutY="410.0" mnemonicParsing="false" onAction="#processAddition" prefHeight="45.0" prefWidth="45.0" text="+" />
-            <Button layoutX="152.5" layoutY="410.0" mnemonicParsing="false" onAction="#processNegate" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="+-" />
-            <Button layoutX="86.25" layoutY="410.0" mnemonicParsing="false" onAction="#processDecimal" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="." />
-            <Button layoutX="20.0" layoutY="340.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="1" />
-            <Button layoutX="86.25" layoutY="340.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="2" />
-            <Button layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="7" />
-            <Button layoutX="20.0" layoutY="270.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="4" />
-            <Button layoutX="86.25" layoutY="270.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="5" />
-            <Button layoutX="86.25" layoutY="200.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="8" />
-            <Button layoutX="153.0" layoutY="200.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="9" />
-            <Button layoutX="153.0" layoutY="270.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="6" />
-            <Button layoutX="153.0" layoutY="340.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="3" />
-            <Button layoutX="153.0" layoutY="130.0" mnemonicParsing="false" onAction="#processClear" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="C" />
-            <Button layoutX="219.0" layoutY="340.0" mnemonicParsing="false" onAction="#processSubtraction" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="-" />
-            <Button layoutX="219.0" layoutY="130.0" mnemonicParsing="false" onAction="#processAllClear" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="AC" />
-            <Button layoutX="219.0" layoutY="270.0" mnemonicParsing="false" onAction="#processMultiplication" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="*" />
-            <Button layoutX="219.0" layoutY="200.0" mnemonicParsing="false" onAction="#processDivision" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="/" />
-            <Button layoutX="285.0" layoutY="270.0" mnemonicParsing="false" onAction="#processPercentage" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="\%" />
-            <Button layoutX="285.0" layoutY="200.0" mnemonicParsing="false" onAction="#processExponentiation" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="^" />
-            <Button layoutX="285.0" layoutY="130.0" mnemonicParsing="false" onAction="#processBackspace" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff;" text="&lt;-" />
+            <Button layoutX="20.0" layoutY="410.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="0" />
+            <Button fx:id="EqualsButton" layoutX="285.0" layoutY="340.0" mnemonicParsing="false" onAction="#processEqual" prefHeight="115.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="=" />
+            <Button layoutX="218.75" layoutY="410.0" mnemonicParsing="false" onAction="#processAddition" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="+" />
+            <Button layoutX="152.5" layoutY="410.0" mnemonicParsing="false" onAction="#processNegate" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="+-" />
+            <Button layoutX="86.25" layoutY="410.0" mnemonicParsing="false" onAction="#processDecimal" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="." />
+            <Button layoutX="20.0" layoutY="340.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="1" />
+            <Button layoutX="86.25" layoutY="340.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="2" />
+            <Button layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="7" />
+            <Button layoutX="20.0" layoutY="270.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="4" />
+            <Button layoutX="86.25" layoutY="270.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="5" />
+            <Button layoutX="86.25" layoutY="200.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="8" />
+            <Button layoutX="153.0" layoutY="200.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="9" />
+            <Button layoutX="153.0" layoutY="270.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="6" />
+            <Button layoutX="153.0" layoutY="340.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="3" />
+            <Button layoutX="153.0" layoutY="130.0" mnemonicParsing="false" onAction="#processClear" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="C" />
+            <Button layoutX="219.0" layoutY="340.0" mnemonicParsing="false" onAction="#processSubtraction" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="-" />
+            <Button layoutX="219.0" layoutY="130.0" mnemonicParsing="false" onAction="#processAllClear" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="AC" />
+            <Button layoutX="219.0" layoutY="270.0" mnemonicParsing="false" onAction="#processMultiplication" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="*" />
+            <Button layoutX="219.0" layoutY="200.0" mnemonicParsing="false" onAction="#processDivision" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="/" />
+            <Button layoutX="285.0" layoutY="270.0" mnemonicParsing="false" onAction="#processPercentage" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="\%" />
+            <Button layoutX="285.0" layoutY="200.0" mnemonicParsing="false" onAction="#processExponentiation" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="^" />
+            <Button layoutX="285.0" layoutY="130.0" mnemonicParsing="false" onAction="#processBackspace" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="&lt;-" />
            
             
          </children>
