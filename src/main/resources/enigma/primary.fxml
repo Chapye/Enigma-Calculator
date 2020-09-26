@@ -5,16 +5,16 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enigma.PrimaryController">
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enigma.PrimaryController">
    <children>
-      <Pane prefHeight="480.0" prefWidth="350.0">
+      <Pane prefHeight="480.0" prefWidth="350.0" style="-fx-background-color: #5c0099;">
          <children>
 
-            <TextField fx:id="MainDisplay" alignment="BOTTOM_RIGHT" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="70.0" prefWidth="310.0" />
-            <TextField fx:id="MiniDisplay" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="25.0" prefWidth="245.0" />
+            <TextField fx:id="MainDisplay" alignment="BOTTOM_RIGHT" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="70.0" prefWidth="310.0" style="-fx-background-color: #ffff80;" />
+            <TextField fx:id="MiniDisplay" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="25.0" prefWidth="245.0" style="-fx-background-color: #ffff4d;" />
             
             <Button layoutX="20.0" layoutY="410.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" text="0" />
-            <Button fx:id="EqualsButton" layoutX="285.0" layoutY="340.0" mnemonicParsing="false" onAction="#processEqual"  prefHeight="115.0" prefWidth="45.0" text="=" />
+            <Button fx:id="EqualsButton" layoutX="285.0" layoutY="340.0" mnemonicParsing="false" onAction="#processEqual" prefHeight="115.0" prefWidth="45.0" text="=" />
             <Button layoutX="218.75" layoutY="410.0" mnemonicParsing="false" onAction="#processAddition" prefHeight="45.0" prefWidth="45.0" text="+" />
             <Button layoutX="152.5" layoutY="410.0" mnemonicParsing="false" onAction="#processNegate" prefHeight="45.0" prefWidth="45.0" text="+-" />
             <Button layoutX="86.25" layoutY="410.0" mnemonicParsing="false" onAction="#processDecimal" prefHeight="45.0" prefWidth="45.0" text="." />
