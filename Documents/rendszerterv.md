@@ -20,7 +20,7 @@ A projektben 4 programtervező informatikus hallgató vesz részt, név szerint:
 ### [Megvalósítandó üzleti folyamatok](https://github.com/Chapye/Enigma-Calculator/blob/master/Documents/func_spec.md)
   
 ### Üzleti szereplők
-Olyan felhasználók akik mindennapi életükben gyakran használnak számológépet vagy szeretnék legyszerüsíteni mindennapjaikban lévő apró matematikai problémák megoldását és nem szeretnének mindig új számológépalkalmazásokat használni környezetüktől függően.
+Olyan felhasználók akik mindennapi életükben gyakran használnak számológépet vagy szeretnék leegyszerüsíteni mindennapjaikban lévő apró matematikai problémák megoldását és nem szeretnének mindig új számológép-alkalmazásokat használni környezetüktől függően.
 
 ### üzleti entitások
 A számológépet használó felhasználók.
@@ -28,13 +28,13 @@ A számológépet használó felhasználók.
 ## Fizikai környezet
 
 ### Operációs Rendszer
-Bámilyen operációs renszeren használható az alkalmazás amely támogat java 11+ JRE telepítését.
+Bámilyen operációs renszeren használható az alkalmazás, amely támogat java 11+ JRE telepítését.
 
 ### Hardver
-Bármely olyan személyi számígtógép amely képes modern operációs rendszerek futtatására.
+Bármely olyan személyi számítógép, amely képes modern operációs rendszerek futtatására.
 
 ### Fejlesztői eszközök
-- Visual Studió Code
+- Visual Studio Code
 - IntelliJ IDEA
 - Java
 - Maven
