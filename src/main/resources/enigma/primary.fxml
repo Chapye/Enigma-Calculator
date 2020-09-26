@@ -11,7 +11,7 @@
 
 <VBox alignment="CENTER" spacing="20.0" style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enigma.PrimaryController">
    <children>
-      <Pane prefHeight="480.0" prefWidth="350.0" style="-fx-background-color: #5c0099; -fx-border-color: #1affff;">
+      <Pane prefHeight="480.0" prefWidth="350.0" style="-fx-background-color: linear-gradient(to bottom,#ffff00,#0073e6); -fx-border-color: #1affff;">
          <children>
 
             <TextField fx:id="MainDisplay" alignment="BOTTOM_RIGHT" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="76.0" prefWidth="310.0" style="-fx-border-color: #000000;" />
