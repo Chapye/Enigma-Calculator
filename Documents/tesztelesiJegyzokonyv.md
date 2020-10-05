@@ -21,24 +21,24 @@
 | T17 | A 3 as gomb és a - gomb hatására a szám és műveleti jel átugrik a kicsi kijelzőre.| Sikeres | gyorgyrichard |
 | T18 | Egy beírt művelet után a + gomb többszöri megnyomása nem eredményez hibát. | Sikeres | gyorgyrichard |
 | T19 | Egy beírt művelet után a - gomb többszöri megnyomása nem eredményez hibát. | Sikeres | gyorgyrichard |
-| T20 | Egy beírt művelet után a * gomb többszöri megnyomása nem eredményez hibát. | Sikeres | gyorgyrichard |
-| T21 |  | Sikeres |  |
-| T22 |  | Sikeres |  |
-| T23 |  | Sikeres |  |
-| T24 |  | Sikeres |  |
-| T25 |  | Sikeres |  |
-| T26 |  | Sikeres |  |
-| T27 |  | Sikeres |  |
-| T28 |  | Sikeres |  |
-| T29 |  | Sikeres |  |
-| T30 |  | Sikeres |  |
-| T31 |  | Sikeres |  |
-| T32 |  | Sikeres |  |
-| T33 |  | Sikeres |  |
-| T34 |  | Sikeres |  |
-| T35 |  | Sikeres |  |
-| T36 |  | Sikeres |  |
-| T37 |  | Sikeres |  |
-| T38 |  | Sikeres |  |
-| T39 |  | Sikeres |  |
-| T40 |  | Sikeres |  |
+| T20 | Egy beírt művelet után a % gomb többszöri megnyomása nem eredményez hibát. | Sikeres | gyorgyrichard |
+| T21 | Egy beírt művelet után a ^ gomb többszöri megnyomása nem eredményez hibát. | Sikeres | Chapye |
+| T22 | Egy beírt művelet után a / gomb többszöri megnyomása nem eredményez hibát. | Sikeres | Chapye |
+| T23 | Egy beírt művelet után a * gomb többszöri megnyomása nem eredményez hibát. | Sikeres | Chapye |
+| T24 | A billentyűzet felső sorában lévő számok ( 0-9 ) lenyomásával a számológép kijelzőjén megjelenik az adott szám. | Sikeres | Chapye |
+| T25 | A numpad felső sorában lévő számok ( 0-9 ) lenyomásával a számológép kijelzőjén megjelenik az adott szám. | Sikeres | Chapye |
+| T26 | A szorzás müvelet végén a számológép kijelzőjén lévő számok mérete visszaáll az eredetire. | Sikeres | Chapye  |
+| T27 | A osztás müvelet végén a számológép kijelzőjén lévő számok mérete visszaáll az eredetire. | Sikeres | Chapye  |
+| T28 | A kivonás müvelet végén a számológép kijelzőjén lévő számok mérete visszaáll az eredetire. | Sikeres | Chapye  |
+| T29 | A összeadás müvelet végén a számológép kijelzőjén lévő számok mérete visszaáll az eredetire. | Sikeres | Chapye  |
+| T30 | A százalékszámítás müvelet végén a számológép kijelzőjén lévő számok mérete visszaáll az eredetire. | Sikeres | Chapye  |
+| T31 | A hatványozás müvelet végén a számológép kijelzőjén lévő számok mérete visszaáll az eredetire. | Sikeres | Chapye  |
+| T32 | A "+ -" gomb lenyomása megváltoztatja a begépelt szám előjelét. | Sikeres | Chapye  |
+| T33 | A backspace gomb lenyomása törli a legszélső ( legutóbb bevitt ) számjegyet. | Sikeres | Chapye  |
+| T34 | A "C" ( clear ) gomb törli a jelenleg tárolt számot. | Sikeres | Chapye |
+| T35 | A "AC" ( all clear ) gomb törli a jelenlegi müveletet és bevitt számot, kezdőállapotba állítja a számológépet. | Sikeres | Chaype |
+| T36 | Ellentétes előjelü számok szorzása nem okozzon problémát. | Sikeres | Chapye |
+| T37 | Nullával való osztás végtelent adjon vissza. | Sikeres | Chapye |
+| T38 | Számok beírása előtt a müveleti gombok lenyomása helyettesítse be a 0 értéket az első számnak.  | Sikeres | Chapye |
+| T39 | A függőségeket nem tartalmazó JAR állomány fusson olyan rendszereken amelyek tartalmazzák a függőségeket. | Sikeres | Chapye |
+| T40 | Az "UBER JAR" amely a függőségeket is tartalmazza fusson olyan rendszereken amelyek nem tartalmazzák a függőségeket. | Sikeres | Chapye |
