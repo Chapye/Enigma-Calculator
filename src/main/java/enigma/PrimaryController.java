@@ -40,6 +40,7 @@ public class PrimaryController {
 
         // unfocus pathField
         Platform.runLater(() -> EqualsButton.requestFocus());
+        MainDisplay.setStyle("-fx-font: 36 System");
     }
 
     @FXML

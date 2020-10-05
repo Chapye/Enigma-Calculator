@@ -15,7 +15,7 @@
          <children>
 
             <TextField fx:id="MainDisplay" alignment="BOTTOM_RIGHT" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="76.0" prefWidth="310.0" style="-fx-border-color: #000000;" />
-            <TextField fx:id="MiniDisplay" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="25.0" prefWidth="245.0" />
+            <TextField fx:id="MiniDisplay" editable="false" layoutX="20.0" layoutY="15.0" prefHeight="25.0" prefWidth="245.0" style="-fx-background-color: transparent;" />
             
             <Button layoutX="20.0" layoutY="410.0" mnemonicParsing="false" onAction="#processDigit" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #1affff; -fx-background-color: #ff3399;" text="0">
                <font>
