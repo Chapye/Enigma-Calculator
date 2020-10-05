@@ -12,16 +12,16 @@
 | T8 | Az ENIGMA ikon megfelelően jelenik meg  a menüsorban. | Sikeres | Nohar |
 | T9 | A 0 gomb lenyomása esetén megjelenik egy 0 a kalkulátor főkijelzőjén. | Sikeres | Nohar |
 | T10 | A 1 gomb lenyomása esetén megjelenik egy 0 a kalkulátor főkijelzőjén. | Sikeres | Nohar |
-| T11 |  | Sikeres |  |
-| T12 |  | Sikeres |  |
-| T13 |  | Sikeres |  |
-| T14 |  | Sikeres |  |
-| T15 |  | Sikeres |  |
-| T16 |  | Sikeres |  |
-| T17 |  | Sikeres |  |
-| T18 |  | Sikeres |  |
-| T19 |  | Sikeres |  |
-| T20 |  | Sikeres |  |
+| T11 | A 4 gomb lenyomása esetén megjelenik egy 4 a kalkulátor főkijelzőjén. | Sikeres | gyorgyrichard |
+| T12 | A 5 gomb lenyomása esetén megjelenik egy 5 a kalkulátor főkijelzőjén. | Sikeres | gyorgyrichard |
+| T13 | A 9 gomb lenyomása esetén megjelenik egy 9 a kalkulátor főkijelzőjén. | Sikeres | gyorgyrichard |
+| T14 | A 3 as gomb és a * gomb hatására a szám és műveleti jel átugrik a kicsi kijelzőre. | Sikeres | gyorgyrichard |
+| T15 | A 9 es gomb és a / gomb hatására a szám és műveleti jel átugrik a kicsi kijelzőre. | Sikeres | gyorgyrichard |
+| T16 | A 7 es gomb és a + gomb hatására a szám és műveleti jel átugrik a kicsi kijelzőre. | Sikeres | gyorgyrichard |
+| T17 | A 3 as gomb és a - gomb hatására a szám és műveleti jel átugrik a kicsi kijelzőre.| Sikeres | gyorgyrichard |
+| T18 | Egy beírt művelet után a + gomb többszöri megnyomása nem eredményez hibát. | Sikeres | gyorgyrichard |
+| T19 | Egy beírt művelet után a - gomb többszöri megnyomása nem eredményez hibát. | Sikeres | gyorgyrichard |
+| T20 | Egy beírt művelet után a * gomb többszöri megnyomása nem eredményez hibát. | Sikeres | gyorgyrichard |
 | T21 |  | Sikeres |  |
 | T22 |  | Sikeres |  |
 | T23 |  | Sikeres |  |
